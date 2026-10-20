@@ -20,8 +20,8 @@ from telethon.errors import (
 api_id = 37093326  # Apni API ID daalo
 api_hash = "6e370e6d265a4866e3af0da44c8334da"  # Apna API HASH daalo
 
-# Control bot ka token
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
+# Control bot ka token (Railway variable ya direct fallback)
+BOT_TOKEN = os.environ.get("BOT_TOKEN") or "8890372929:AAE9-x31PtV43DDwuzRzQ9aPWVoCsNCN46s"
 
 # User account session: Railway Variables
 SESSION_STRING = os.environ.get("SESSION_STRING", "")
